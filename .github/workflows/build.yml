@@ -40,7 +40,7 @@ jobs:
 
       - name: Build Executable
         run: |
-          uv tool run pyinstaller --onefile Area_Calculator.py
+          uv run pyinstaller --onefile Area_Calculator.py
 
       - name: Copy README
         run: cp README.md ./dist/README.txt
